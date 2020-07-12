@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>MyPortfolio Bootstrap Template - Contact</title>
+  <title>MyPortfolio Bootstrap Template - Works</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -45,10 +45,10 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About WICS</a></li>
             <li><a href="people.html">People</a></li>
-            <li><a href="events.html">Events/Posts</a></li>
+            <li class="active">><a href="events.html">Events/Posts</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="blogs.html">Blogs</a></li>
-            <li class="active">><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="col-md-6 d-none d-md-block  mr-auto">
@@ -81,82 +81,115 @@
 
   <main id="main">
 
-    <section class="section pb-5">
+    <!-- ======= Works Section ======= -->
+    <section class="section site-portfolio">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
+            <h2>Hey, I'm Johan Stanworth</h2>
+            <p class="mb-0">Freelance Creative &amp; Professional Graphics Designer</p>
+          </div>
+          <div class="col-md-12 col-lg-6 text-left text-lg-right" data-aos="fade-up" data-aos-delay="100">
+            <div id="filters" class="filters">
+              <a href="#" data-filter="*" class="active">All</a>
+              <a href="#" data-filter=".web">Web</a>
+              <a href="#" data-filter=".design">Design</a>
+              <a href="#" data-filter=".branding">Branding</a>
+              <a href="#" data-filter=".photography">Photography</a>
+            </div>
+          </div>
+        </div>
+        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+          <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Boxed Water</h3>
+                <span>Web</span>
+              </div>
+              <img class="img-fluid" src="assets/img/img_1.jpg">
+            </a>
+          </div>
+          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Build Indoo</h3>
+                <span>Photography</span>
+              </div>
+              <img class="img-fluid" src="assets/img/img_2.jpg">
+            </a>
+          </div>
+          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Cocooil</h3>
+                <span>Branding</span>
+              </div>
+              <img class="img-fluid" src="assets/img/img_3.jpg">
+            </a>
+          </div>
+          <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Nike Shoe</h3>
+                <span>Design</span>
+              </div>
+              <img class="img-fluid" src="assets/img/img_4.jpg">
+            </a>
+          </div>
+          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Kitchen Sink</h3>
+                <span>Photography</span>
+              </div>
+              <img class="img-fluid" src="assets/img/img_5.jpg">
+            </a>
+          </div>
+          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Amazon</h3>
+                <span>brandingn</span>
+              </div>
+              <img class="img-fluid" src="assets/img/img_6.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section><!-- End  Works Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section class="section pt-0">
       <div class="container">
 
-        <div class="row mb-5 align-items-end">
-          <div class="col-md-6" data-aos="fade-up">
-            <h2>Contact</h2>
-            <p class="mb-0">Thank you for taking time to contact us. Please send us your query either through this form or alternatively through the contact details mentioned.
-            </p>
+        <div class="owl-carousel testimonial-carousel">
+
+          <div class="testimonial-wrap">
+            <div class="testimonial">
+              <img src="assets/img/person_1.jpg" alt="Image" class="img-fluid">
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis
+                  explicabo inventore.</p>
+              </blockquote>
+              <p>&mdash; Jean Hicks</p>
+            </div>
           </div>
 
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-6 form-group">
-                  <label for="name">Email</label>
-                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-12 form-group">
-                  <label for="name">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-12 form-group">
-                  <label for="name">Message</label>
-                  <textarea class="form-control" name="message" cols="30" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
-                  <div class="validate"></div>
-                </div>
-
-                <div class="col-md-12 mb-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-
-                <div class="col-md-6 form-group">
-                  <input type="submit" class="readmore d-block w-100" value="Send Message">
-                </div>
-              </div>
-
-            </form>
-
-          </div>
-
-          <div class="col-md-4 ml-auto order-2" data-aos="fade-up">
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <strong class="d-block mb-1">Address</strong>
-                <span>UCSB, Santa Barbara, CA, USA.</span>
-              </li>
-              <li class="mb-3">
-                <strong class="d-block mb-1">Phone</strong>
-                <span>+1 000 000 0000</span>
-              </li>
-              <li class="mb-3">
-                <strong class="d-block mb-1">Email</strong>
-                <span>wics.ucsb@gmail.com</span>
-              </li>
-            </ul>
+          <div class="testimonial-wrap">
+            <div class="testimonial">
+              <img src="assets/img/person_2.jpg" alt="Image" class="img-fluid">
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis
+                  explicabo inventore.</p>
+              </blockquote>
+              <p>&mdash; Chris Stanworth</p>
+            </div>
           </div>
 
         </div>
 
       </div>
-
-    </section>
+    </section><!-- End Testimonials Section -->
 
   </main><!-- End #main -->
 
@@ -165,7 +198,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <p class="mb-1">&copy; Copyright WICS-UCSB. All Rights Reserved</p>
+          <p class="mb-1">&copy; Copyright MyPortfolio. All Rights Reserved</p>
           <div class="credits">
             <!--
             All the links in the footer should remain intact.
