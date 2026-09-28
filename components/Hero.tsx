@@ -20,7 +20,7 @@ export default function Hero() {
     <section className="relative w-full md:h-[100vh] h-[85vh] bg-[#dccce1] flex flex-col overflow-hidden">
       <Carousel slides={slides} />
       <div>
-        <h1 className="md:text-2xl text-lg pt-5 p-10">
+        <h1 className="md:text-2xl text-md pt-5 p-10">
             Women in Computer Science at UC Santa Barbara — empowering everyone in tech regardless of gender, ability, skill level, or major.
             Check out our latest events{" "}<Link
             href="/events"

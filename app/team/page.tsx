@@ -25,7 +25,7 @@ export default function HomePage() {
                 className="flex flex-col items-center text-center"
               >
                 {/* Circular image */}
-                <div className="relative w-40 h-40 rounded-full overflow-hidden shadow-md mb-4">
+                <div className="relative w-20 h-20 md:w-40 md:h-40 rounded-full overflow-hidden shadow-md mb-4">
                   <Image
                     src={member.image}
                     alt={member.name}
@@ -33,11 +33,11 @@ export default function HomePage() {
                     className="object-cover"
                   />
                 </div>
-                  <h3 className="font-semibold text-lg md:text-2xl mb-2 text-[#6e4479]">
+                  <h3 className="font-semibold text-md md:text-2xl mb-2 text-[#6e4479]">
                     {member.name}
                   </h3>
                   <div className="flex flex-row  items-center justify-center">
-                    <p className="text-[#334c96] text-lg leading-relaxed">
+                    <p className="text-[#334c96] text-md leading-relaxed">
                         {member.position} 
                     </p>
                     <a href={`mailto:${member.email}`}
@@ -56,7 +56,7 @@ export default function HomePage() {
           <h2 className="text-left font-display font-bold text-3xl mb-10 text-[#334c96]">
             WiCS Alumni
           </h2>
-          <div className="grid grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <ul className="list-disc">
               {alumniList.slice(0, splitIndex).map((alumni, index) => (
                   <li key={index}>
