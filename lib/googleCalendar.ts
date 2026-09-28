@@ -23,8 +23,8 @@ function extractImage(description?: string) {
 
 function splitDateTime(dt?: { date?: string; dateTime?: string }) {
   if (dt?.dateTime) {
-    const d = new Date(dt.dateTime);
-    return { date: d.toISOString().split("T")[0], time: d.toTimeString().slice(0, 5) };
+    // change dateTime for googleCalendar format
+    return { date: dt.dateTime.slice(0, 10), time: dt.dateTime.slice(11, 16) };
   }
   return { date: dt?.date ?? "", time: "" }; // all-day event
 }
