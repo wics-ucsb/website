@@ -7,6 +7,8 @@ import { Mail } from "lucide-react";
 import Image from "next/image";
 
 export default function HomePage() {
+  const splitIndex = Math.ceil(alumniList.length / 3);
+
   return (
     <main className="flex flex-col min-h-screen">
       {/* Officers Section */}
@@ -16,7 +18,7 @@ export default function HomePage() {
             Meet the Team!
           </h2>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
             {teamMembers.map((member) => (
               <div
                 key={member.id}
@@ -31,7 +33,7 @@ export default function HomePage() {
                     className="object-cover"
                   />
                 </div>
-                  <h3 className="font-semibold text-3xl mb-2 text-[#6e4479]">
+                  <h3 className="font-semibold text-lg md:text-2xl mb-2 text-[#6e4479]">
                     {member.name}
                   </h3>
                   <div className="flex flex-row  items-center justify-center">
@@ -40,7 +42,7 @@ export default function HomePage() {
                     </p>
                     <a href={`mailto:${member.email}`}
                     className="inline-flex gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-[#dccce1]/60 text-[#334c96] hover:bg-[#334c96] hover:text-white transition-colors duration-200">
-                        <Mail size={40} />
+                        <Mail size={30} />
                     </a>
                   </div>
                 </div>
@@ -54,21 +56,53 @@ export default function HomePage() {
           <h2 className="text-left font-display font-bold text-3xl mb-10 text-[#334c96]">
             WiCS Alumni
           </h2>
-          <ul className="list-disc">
-            {alumniList.map((alumni, index) => (
-                <li key={index}>
-                  <div className="flex flex-row  items-center justify-center">
-                    <p className="text-[#334c96] text-lg leading-relaxed">
-                        {alumni.name} 
-                    </p>
-                    <a href={`mailto:${alumni.email}`}
-                    className="inline-flex gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-[#dccce1]/60 text-[#334c96] hover:bg-[#334c96] hover:text-white transition-colors duration-200">
-                        <Mail size={40} />
-                    </a>
-                  </div>
-                </li>
-            ))}
-          </ul>
+          <div className="grid grid-cols-3 gap-10">
+            <ul className="list-disc">
+              {alumniList.slice(0, splitIndex).map((alumni, index) => (
+                  <li key={index}>
+                    <div className="flex flex-row items-center">
+                      <p className="text-[#334c96] text-lg leading-relaxed">
+                          {alumni.name} 
+                      </p>
+                      <a href={`mailto:${alumni.email}`}
+                      className="inline-flex gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-[#dccce1]/60 text-[#334c96] hover:bg-[#334c96] hover:text-white transition-colors duration-200">
+                          <Mail size={30} />
+                      </a>
+                    </div>
+                  </li>
+                ))}
+            </ul>
+            <ul className="list-disc">
+              {alumniList.slice(splitIndex, splitIndex*2).map((alumni, index) => (
+                  <li key={index}>
+                    <div className="flex flex-row items-center">
+                      <p className="text-[#334c96] text-lg leading-relaxed">
+                          {alumni.name} 
+                      </p>
+                      <a href={`mailto:${alumni.email}`}
+                      className="inline-flex gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-[#dccce1]/60 text-[#334c96] hover:bg-[#334c96] hover:text-white transition-colors duration-200">
+                          <Mail size={30} />
+                      </a>
+                    </div>
+                  </li>
+                ))}
+            </ul>
+            <ul className="list-disc">
+              {alumniList.slice(splitIndex*2).map((alumni, index) => (
+                  <li key={index}>
+                    <div className="flex flex-row items-center">
+                      <p className="text-[#334c96] text-lg leading-relaxed">
+                          {alumni.name} 
+                      </p>
+                      <a href={`mailto:${alumni.email}`}
+                      className="inline-flex gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-[#dccce1]/60 text-[#334c96] hover:bg-[#334c96] hover:text-white transition-colors duration-200">
+                          <Mail size={30} />
+                      </a>
+                    </div>
+                  </li>
+                ))}
+            </ul>
+          </div>
         </div>
       </section>
       <Footer />

@@ -2,7 +2,6 @@
 import { useState } from "react";
 import React from "react";
 import Footer from "@/components/Footer";
-import Image from "next/image";
 import { Users, Code, Rocket } from "lucide-react";
 
 const whyJoinTiles = [
@@ -39,6 +38,14 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+
+      <div className="flex justify-center items-center aspect-square max-w-[60vw] w-full mx-auto">
+        <img 
+            src="images/wics-bg.png" 
+            alt="" 
+            className="w-full h-full object-contain pb-10" 
+        />
+      </div>
 
       {/* Why Join Us Section */}
       <section className="w-full py-16 px-6 bg-[#f7f5f9]">

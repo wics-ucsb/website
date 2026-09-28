@@ -48,7 +48,7 @@ export default function Carousel({ slides, autoPlayInterval = 5000 }: CarouselPr
       <button
         onClick={prev}
         aria-label="Previous slide"
-        className="absolute left-2 md:left-6 z-10 p-2 rounded-full bg-white/80 shadow-md text-[#334c96] hover:bg-white hover:scale-110 transition-all duration-200"
+        className="absolute left-2 md:left-6 z-10 p-2 rounded-full bg-white/60 shadow-md text-[#334c96] hover:bg-white hover:scale-110 transition-all duration-200"
       >
         <ArrowLeft size={22} strokeWidth={2.5} />
       </button>
@@ -57,7 +57,7 @@ export default function Carousel({ slides, autoPlayInterval = 5000 }: CarouselPr
       <button
         onClick={next}
         aria-label="Next slide"
-        className="absolute right-2 md:right-6 z-10 p-2 rounded-full bg-white/80 shadow-md text-[#334c96] hover:bg-white hover:scale-110 transition-all duration-200"
+        className="absolute right-2 md:right-6 z-10 p-2 rounded-full bg-white/60 shadow-md text-[#334c96] hover:bg-white hover:scale-110 transition-all duration-200"
       >
         <ArrowRight size={22} strokeWidth={2.5} />
       </button>
